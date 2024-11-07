@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>Eternity Calculator</h1>
+
+    <div>
+        <label for="operation">Select Operation:</label>
+        <select id="operation">
+            <option value="standard_deviation">Standard Deviation</option>
+            <!-- Add more options here if you add more calculations -->
+        </select>
+
+        <label for="data">Enter Data (comma-separated):</label>
+        <input type="text" id="data" placeholder="e.g., 1,2,3,4,5">
+
+        <button onclick="submitCalculation()">Calculate</button>
+    </div>
+
+    <p>Result: <span id="result"></span></p>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
